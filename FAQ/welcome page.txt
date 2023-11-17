@@ -1,0 +1,29 @@
+This program is designed to solve various statistical problems easily!
+
+You can download your data file in Excel or CSV format or copy the desired data columns from the file into a data table. To do this, go to the "Data" section in the left panel. In the "Data" section, you can create a table from scratch and enter data for analysis there. By right-clicking on a data table, you can add, copy, or remove columns or rows. 
+
+To start analyzing your data, click the "Let's start analyzing" button in the "Data" section under the data table. This will make the right panel with analysis tools visible. 
+There are 5 sections:
+
+- section "Basic Statistics": assessing the distribution of your data in terms of the normal distribution using several tests, including graphical methods. Also in this section you can set the confidence interval you need to evaluate the data.
+
+- section "Statistical criteria": a set of parametric and nonparametric tests to test hypotheses in your data, allowing you to determine whether any observed effect is statistically significant or due to chance.
+
+- section "Correlation and Regression": assessing the statistical relationship of variables and the inferred relationships between the dependent variable and independent variables in your data. Several methods are presented to assess the statistical relationship of variables. Linear and logistic (ROC curve) regressions are presented to evaluate the relationships between variables.
+
+- section "Sample size selection": assessment of the required number of observations for inclusion in the statistical sample based on the sampling error or vice versa.
+
+- section "Coefficients": calculation of critical values for the chi-square, Student's (T-test) and Gaussian (Z-test) tests. Calculation based on Poisson distribution.
+
+
+If you need information about the methods and criteria that are implemented in the analysis tools, please go to the "FAQ" section.
+
+The right toolbar can also be accessed using the "Date Analysis" button on the left pane.
+
+In the "Settings" section you can configure the data output for your tasks: replacing empty cells in data, the number of significant digits.
+
+In the "Reports" section, you can save your worksheet of data (before and after performing the analysis) in the required format, save the analysis results in PDF format, save graphs and plots in JPG format.
+
+For a comfortable presentation of the analysis results, it is recommended to assign names to the columns, but no more than 12 characters long.
+
+Have fun using the program and let's start analyzing!

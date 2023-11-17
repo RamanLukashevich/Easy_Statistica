@@ -1,0 +1,20 @@
+
+The test of normality is used to determine whether the sample data was drawn from a normally distributed population (within some tolerance).
+
+Analytical methods:
+
+The Student's t-test is probably the most well know way of rejecting the null hypothesis. This test calculates the p-value of a sample vs a normal population or vs another sample. The result, p-value, tells you how likely these samples comes from the exact same distribution.
+When obtained, the p-value can be compared with a threshold call statistical significance (e.g. 0.05), if the p-value is smaller, we can reject the null hypotheses.
+
+The Kolmogorov - Smirnov test is a nonparametric test of the equality of continuous or discontinuous, one-dimensional probability distributions that can be used to compare a sample with a reference probability distribution or to compare two samples.  It is a bit more complex and allows you to detect patterns you can't detect with a Student's t-test.
+
+Shapiro-Wilk test is a hypothesis test that evaluates whether a data set is normally distributed. It's important to note that there are limitations to the Shapiro-Wilk test. As the dataset being evaluated gets larger, the Shapiro-Wilk test becomes more sensitive to small deviations which leads to a greater probability of rejecting the null hypothesis
+
+Z-test is a statistical test used to determine whether two population means are different when the variances are known and the sample size is large. Z-test tests the mean of a distribution. For each significance level in the confidence interval, the Z-test has a single critical value (for example, 1.96 for 5% two tailed) which makes it more convenient than the Student's t-test whose critical values are defined by the sample size (through the corresponding degrees of freedom). Both the Z-test and Student's t-test have similarities in that they both help determine the significance of a set of data.
+
+Graphical methods:
+
+An informal approach to testing normality is to compare a histogram of the sample data to a normal probability curve. The empirical distribution of the data (the histogram) should be bell-shaped and resemble the normal distribution. This might be difficult to see if the sample is small. 
+In this program: if one value for histogram is selected, the histogram additionally shows a normal distribution and distribution of value.
+
+A boxplot (or box-and-whisker plot) shows the distribution of quantitative data in a way that facilitates comparisons between variables or across levels of a categorical variable. The box shows the quartiles (Q1 and Q3) of the dataset while the whiskers extend to show the rest of the distribution, except for points that are determined to be "outliers" using a method that is a function of the inter-quartile range. Boxplots can tell you about your outliers and their values, if your data is symmetrical, how tightly your data is grouped and if and how your data is skewed.

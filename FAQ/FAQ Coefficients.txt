@@ -1,0 +1,21 @@
+
+The chi-square test is a method in mathematical statistics. It shows the differences between the actual data in the sample and the theoretical results that the researcher hypothesized. The method is used to evaluate whether the sample complies with the distribution laws.
+A small value of the chi-square test statistic means that the null hypothesis cannot be rejected, but it cannot be confirmed either. A large value allows us to reject the null hypothesis and confirm the relationship between the factors. The question remains: how do you know if the number is large enough?
+There are tables of critical values specifically for this purpose. They describe the "borderline" values of the chi-square test statistic for different conditions. If the calculated result is greater than the tabulated one, it means that the null hypothesis is false and there is a relationship. If it is less, the null hypothesis cannot be rejected.
+In the program you can calculate the critical value of the criterion for your case. That is, for the required number of degrees of freedom and level of confidence. The significance level is a number that indicates the probability of obtaining a statistically significant result due to error. The researcher chooses this level himself.
+
+Student's t-test is a general name for a class of methods for statistical testing of hypotheses (statistical tests) based on the Student distribution. The most common uses of the t-test involve testing the equality of means in two samples. As well as for the critical chi-square value, the program can calculate the critical value for the Student's t-test for the desired number of degrees of freedom and level of confidence.
+
+The normal distribution, or Gaussian distribution, is used to test various hypotheses, including the hypothesis that two means are equal. This distribution has an arithmetic mean equal to 0 and a variance equal to 1. To find the critical value for the Z-test, it is necessary to select a confidence level.
+
+Poisson distribution is a distribution of a discrete type of random variable representing the number of events that occurred in a fixed time, provided that these events occur with some fixed average intensity and independently of each other. The Poisson distribution is also called the rare event distribution.
+The Poisson model usually describes a pattern of rare events: under some assumptions about the nature of the process of occurrence of random events, the number of events that occur in a fixed period of time or in a fixed region of space often follows a Poisson distribution.
+The program can calculate the probability that some value is part of the sample. To do this, it is necessary to enter the average value for the sample and our value.
+The Poisson model usually describes a pattern of rare events: under some assumptions about the nature of the process of occurrence of random events, the number of events that occur in a fixed period of time or in a fixed region of space often follows a Poisson distribution.
+The Poisson distribution is an appropriate model if the following assumptions are true:
+   - k is the number of times an event occurs in an interval and k can take values 0, 1, 2, ... .
+   - the occurrence of one event does not affect the probability that a second event will occur. That is, events occur independently.
+   - the average rate at which events occur is independent of any occurrences. For simplicity, this is usually assumed to be constant, but may in practice vary with time.
+   - two events cannot occur at exactly the same instant; instead, at each very small sub-interval, either exactly one event occurs, or no event occurs.
+If these conditions are true, then k is a Poisson random variable, and the distribution of k is a Poisson distribution.
+The Poisson distribution is also the limit of a binomial distribution, for which the probability of success for each trial equals divided by the number of trials, as the number of trials approaches infinity. 

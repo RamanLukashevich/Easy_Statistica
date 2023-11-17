@@ -1,0 +1,35 @@
+
+Statistical significance is a determination that a relationship between two or more variables is caused by something other than chance. Statistical significance is used to provide evidence concerning the plausibility of the null hypothesis, which hypothesizes that there is nothing more than random chance at work in the data. Statistical hypothesis testing is used to determine whether the result of a data set is statistically significant.
+
+Parametric tests are those tests for which we have prior knowledge of the population distribution (i.e, normal), or if not then we can easily approximate it to a normal distribution which is possible with the help of the Central Limit Theorem.
+
+The Student's t-test tells you how significant the differences between group means are. It lets you know if those differences in means could have happened by chance. The t-test is usually used when data sets follow a normal distribution but you don't know the population variance.
+There are three main types of t-test: 
+	An Independent Samples t-test compares the means for two groups. The independent samples t-test (also called the unpaired samples t-test) is the most common form of the t-test. It helps you to compare the means of two sets of data.
+	A One sample t-test tests the mean of a single group against a known mean. One sample t-test: used to compare a result to an expected value.
+	A Paired sample t-test compares means from the same group at different times (say, one year apart). Paired t-test (dependent samples): used to compare related observations.
+Multi t-test. This program implements a multi t-test: pairwise comparison of all available values.
+
+An F-test is any statistical test in which the test statistic has an F-distribution under the null hypothesis. It is most often used when comparing statistical models that have been fitted to a data set, in order to identify the model that best fits the population from which the data were sampled. Exact "F-tests" mainly arise when the models have been fitted to the data using least squares.
+
+Analysis of variance, or ANOVA, is a statistical method that separates observed variance data into different components to use for additional tests. A one-way ANOVA is used for three or more groups of data, to gain information about the relationship between the dependent and independent variables. Use a one-way ANOVA when you have collected data about one categorical independent variable and one quantitative dependent variable. The independent variable should have at least three levels (i.e. at least three different groups or categories).
+
+In hypothesis testing, the other type apart from parametric is non-parametric. Typically, for every parametric test, its non-parametric cousin can be used when the assumptions cannot be fulfilled for the parametric test. Non-parametric tests do not need a lot of assumptions regarding the population and are less stringent when it comes to the sample requirements. However, they are less powerful than their parametric counterparts. It means that the chances of a non-parametric test concluding that two attributes have an association with each other are less even when they, in fact, are associated. To compensate for this less power, you need to increase the sample size to gain the result that the parametric counterpart would have provided.
+
+The Mann-Whitney U-test, also known as the Wilcoxon Rank Sum Test, is a non-parametric statistical test used to compare two samples or groups. The Mann-Whitney U-test assesses whether two sampled groups are likely to derive from the same population, and essentially asks; do these two populations have the same shape with regards to their data? In other words, we want evidence as to whether the groups are drawn from populations with different levels of a variable of interest. 
+
+The Wilcoxon test, which can refer to either the rank sum test or the signed rank test version, is a nonparametric statistical test that compares two paired groups. The tests essentially calculate the difference between sets of pairs and analyze these differences to establish if they are statistically significantly different from one another. 
+
+The Kolmogorov-Smirnov test compares the cumulative distribution of the two data sets, and computes a p-value that depends on the largest discrepancy between distributions. The Kolmogorov-Smirnov test is sensitive to any differences in the two distributions. Substantial differences in shape, spread or median will result in a small p-value.
+
+The Kruskal-Wallis test is a non-parametric statistical test used to determine if there are statistically significant differences between three or more groups in a dataset. In the context of time series data, you can think of the groups as representing different time intervals within the series. The test works by comparing the ranks of data points across these intervals.
+
+The Friedman test is a non-parametric alternative to the Repeated Measures ANOVA. It is used to determine whether or not there is a statistically significant difference between the means of three or more groups in which the same subjects show up in each group.
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+
+Sample size determination is the act of choosing the number of observations or replicates to include in a statistical sample. The sample size is an important feature of any empirical study in which the goal is to make inferences about a population from a sample. In practice, the sample size used in a study is usually determined based on the cost, time, or convenience of collecting the data, and the need for it to offer sufficient statistical power. In experimental design, where a study may be divided into different treatment groups, there may be different sample sizes for each group. 
+
+Larger sample sizes generally lead to increased precision when estimating unknown parameters. Several fundamental facts of mathematical statistics describe this phenomenon, including the law of large numbers and the central limit theorem.
+
+In some situations, the increase in precision for larger sample sizes is minimal, or even non-existent. This can result from the presence of systematic errors or strong dependence in the data, or if the data follows a heavy-tailed distribution.
+
+In the program, based on the data: confidence interval, sampling errors and frequency of occurrence of the characteristic being studied in the sample, the calculation of the size of the sample required for the study is implemented. Also, based on the confidence interval, the size of the selected sample and the frequency of occurrence of the characteristic being studied in the sample, the error is calculated for this sample.

@@ -1,0 +1,11 @@
+Easy Statistica Application
+
+Version 0.9.3
+Copyright (C) Raman Lukashevich 2023-
+
+This program is free software; 
+you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+
+Using Python v3.12, PySide6 v6.6.0
+pandas v2.1.3, matplotlib v3.8.1, scipy v1.11.3, sklearn v1.3.2, numpy v1.26.2, statsmodels v0.14.0, openyxl v3.1.2 

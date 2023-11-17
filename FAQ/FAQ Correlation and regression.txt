@@ -1,0 +1,30 @@
+
+Correlation is a statistical value that shows the degree of relationship between two variables. It can range from -1 to 1. A value of -1 indicates a strong negative relationship, and a value of 1 indicates a strong positive relationship. A value of 0 indicates no relationship between the variables.
+
+Pearson's correlation coefficient (r) is used to examine the relationship between two variables measured on metric scales in the same sample. It allows you to determine how proportional the variability of two variables is.
+The correlation coefficient r characterizes the existence of a linear relationship between two quantities.
+To begin calculating the Pearson correlation coefficient, the following conditions must be met:
+     The study variables X and Y must be normally distributed.
+     The variables of interest X and Y must be measured on an interval or ratio scale.
+     The number of values in the studied variables X and Y must be the same.
+Using the Pearson correlation coefficient, you can only determine the strength of a linear relationship between variables; other types of relationships are identified by regression analysis methods.
+
+Spearman's rank correlation coefficient is a quantification of the statistical study of the relationship between phenomena, used in nonparametric methods.
+The coefficient shows how the sum of squared differences between ranks obtained during observation differs from the case of no connection.
+
+Kendall's rank correlation coefficient is a statistical measure of the strength of dependence of features presented on an ordinal (rank) scale. It is an alternative to the Spearman rank correlation coefficient, which is preferable to use in the case of small sample sizes.
+Since the Kendall correlation, like the Spearman correlation, is a rank correlation, then to assess the strength of the relationship between characteristics, not their values are used, but their corresponding ranks. The coefficient is invariant with respect to any monotonic transformation of the measurement scale (ascending or descending).
+Just like other rank correlation measures, the Kendall coefficient is a nonparametric estimate, i.e. does not require any assumptions regarding the distribution of data set values and its parameters. This greatly simplifies its use.
+Kendall's correlation coefficient uses pairs of observations and determines the strength of the relationship based on the pattern of concordant and disconcordant between the pairs.
+
+In the program you can conduct correlation analysis both in pairs and for all variables. To conduct a correlation analysis for all variables, you must select "All" in the first combo box. To conduct correlation analysis in pairs, select the variables of interest in the next two combo boxes.
+
+Logistic and linear regression are forms of statistical analysis or data mining and are the subject of data science. They use mathematical modeling to relate a set of independent or known variables to dependent ones.
+
+Each independent variable is directly related to the dependent variable and is not related to other independent variables. This relationship is known as linear dependence. The dependent variable is usually a value from a range of continuous values. In mathematical statistics, linear regression is a method of approximating relationships between input and output variables based on a linear model.
+
+Logistic regression is a type of multiple regression whose general purpose is to analyze the relationship between several independent variables (also called regressors or predictors) and a dependent variable. Binary logistic regression is used when the dependent variable is binary (that is, it can only take two values). Using logistic regression, you can estimate the probability that an event will occur for a specific subject (sick/healthy, loan repayment/default, etc.).
+
+ROC curve (receiver operating characteristic) is a graph that allows you to evaluate the quality of binary classification; it displays the ratio between the proportion of objects out of the total number of attribute carriers correctly classified as carrying the attribute (true positive rate, TPR, called sensitivity classification algorithm), and the proportion of objects from the total number of objects that do not carry the attribute, erroneously classified as bearing the attribute (English false positive rate, FPR, the value 1-FPR is called the specificity of the classification algorithm) when varying the threshold of the decision rule.
+
+Very important: for logistic analysis, it is necessary to use binary values (for example, 0 and 1) as the dependent variable.
