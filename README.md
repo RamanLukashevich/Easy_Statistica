@@ -50,4 +50,3 @@ In the "Reports" section, you can save your worksheet of data (before and after 
 
 
 
-https://drive.google.com/drive/folders/19DgtpvFLSrlNvipfKdj9_pGqnq2AWJQG?usp=sharing
