@@ -4,7 +4,8 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-Easy Statistica is an application for statistical analysis that implements the functions of data analysis, data management, data mining, data visualization using statistical methods. The application is built in Python using the PySide6/Qt toolkit. It uses the Pandas DataFrame class to work with data. For graphics, the application uses the Matplotlib library to visualize data in 2D graphics.
+Easy Statistica is an application for statistical analysis that implements the functions of data analysis, data management, data mining, data visualization using statistical methods. The application is built in Python using the PySide6/Qt toolkit. The application uses the Pandas DataFrame class to work with data. For graphics, the application uses the Matplotlib library to visualize data in 2D graphics.
+To create the graphical interface of the application, the Qt designer program was used - a cross-platform free environment for developing graphical interfaces for programs using the Qt library.
 
 <img align="center" src=examples/screen_1.png width=600px>
 
