@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'interface.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.6.0
+## Created by: Qt User Interface Compiler version 6.5.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -24,7 +24,6 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QComb
     QWidget)
 
 from mplwidget import MplWidget
-import recources
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -153,7 +152,7 @@ class Ui_MainWindow(object):
         font.setPointSize(10)
         self.MenuBtn_2.setFont(font)
         icon = QIcon()
-        icon.addFile(u"H:/Easy Statistica/icons/menu.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"./icons/menu.png", QSize(), QIcon.Normal, QIcon.Off)
         self.MenuBtn_2.setIcon(icon)
         self.MenuBtn_2.setIconSize(QSize(24, 24))
         self.MenuBtn_2.setCheckable(True)
@@ -184,7 +183,7 @@ class Ui_MainWindow(object):
         font1.setPointSize(12)
         self.DataBtn_2.setFont(font1)
         icon1 = QIcon()
-        icon1.addFile(u"H:/Easy Statistica/icons/table.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u"./icons/table.png", QSize(), QIcon.Normal, QIcon.Off)
         self.DataBtn_2.setIcon(icon1)
         self.DataBtn_2.setIconSize(QSize(24, 24))
         self.DataBtn_2.setCheckable(True)
@@ -195,7 +194,7 @@ class Ui_MainWindow(object):
         self.DataAnalysisBtn_2.setObjectName(u"DataAnalysisBtn_2")
         self.DataAnalysisBtn_2.setFont(font1)
         icon2 = QIcon()
-        icon2.addFile(u"H:/Easy Statistica/icons/pie-chart.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u"./icons/pie-chart.png", QSize(), QIcon.Normal, QIcon.Off)
         self.DataAnalysisBtn_2.setIcon(icon2)
         self.DataAnalysisBtn_2.setIconSize(QSize(24, 24))
         self.DataAnalysisBtn_2.setCheckable(True)
@@ -206,7 +205,7 @@ class Ui_MainWindow(object):
         self.ReportsBtn_2.setObjectName(u"ReportsBtn_2")
         self.ReportsBtn_2.setFont(font1)
         icon3 = QIcon()
-        icon3.addFile(u"H:/Easy Statistica/icons/save.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u"./icons/save.png", QSize(), QIcon.Normal, QIcon.Off)
         self.ReportsBtn_2.setIcon(icon3)
         self.ReportsBtn_2.setIconSize(QSize(24, 24))
 
@@ -231,7 +230,7 @@ class Ui_MainWindow(object):
         self.SettingsBtn_2.setObjectName(u"SettingsBtn_2")
         self.SettingsBtn_2.setFont(font1)
         icon4 = QIcon()
-        icon4.addFile(u"H:/Easy Statistica/icons/settings.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u"./icons/settings.png", QSize(), QIcon.Normal, QIcon.Off)
         self.SettingsBtn_2.setIcon(icon4)
         self.SettingsBtn_2.setIconSize(QSize(24, 24))
         self.SettingsBtn_2.setCheckable(True)
@@ -242,7 +241,7 @@ class Ui_MainWindow(object):
         self.HelpBtn_2.setObjectName(u"HelpBtn_2")
         self.HelpBtn_2.setFont(font1)
         icon5 = QIcon()
-        icon5.addFile(u"H:/Easy Statistica/icons/help-circle.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u"./icons/help-circle.png", QSize(), QIcon.Normal, QIcon.Off)
         self.HelpBtn_2.setIcon(icon5)
         self.HelpBtn_2.setIconSize(QSize(24, 24))
         self.HelpBtn_2.setCheckable(True)
@@ -253,7 +252,7 @@ class Ui_MainWindow(object):
         self.InfoBtn_2.setObjectName(u"InfoBtn_2")
         self.InfoBtn_2.setFont(font1)
         icon6 = QIcon()
-        icon6.addFile(u"H:/Easy Statistica/icons/github.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon6.addFile(u"./icons/github.png", QSize(), QIcon.Normal, QIcon.Off)
         self.InfoBtn_2.setIcon(icon6)
         self.InfoBtn_2.setIconSize(QSize(24, 24))
         self.InfoBtn_2.setCheckable(True)
@@ -306,7 +305,7 @@ class Ui_MainWindow(object):
         self.MenuBtn.setObjectName(u"MenuBtn")
         self.MenuBtn.setFont(font)
         icon7 = QIcon()
-        icon7.addFile(u"H:/Easy Statistica/icons/chevron-left.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon7.addFile(u"./icons/chevron-left.png", QSize(), QIcon.Normal, QIcon.Off)
         self.MenuBtn.setIcon(icon7)
         self.MenuBtn.setIconSize(QSize(24, 24))
         self.MenuBtn.setCheckable(True)
@@ -457,7 +456,7 @@ class Ui_MainWindow(object):
         self.CloseCentralMenuBtn.setObjectName(u"CloseCentralMenuBtn")
         self.CloseCentralMenuBtn.setLayoutDirection(Qt.RightToLeft)
         icon8 = QIcon()
-        icon8.addFile(u"H:/Easy Statistica/icons/x-circle.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon8.addFile(u"./icons/x-circle.png", QSize(), QIcon.Normal, QIcon.Off)
         self.CloseCentralMenuBtn.setIcon(icon8)
         self.CloseCentralMenuBtn.setIconSize(QSize(18, 18))
 
@@ -590,7 +589,7 @@ class Ui_MainWindow(object):
         self.CreateTableBtn.setMaximumSize(QSize(16777215, 16777215))
         self.CreateTableBtn.setFont(font4)
         icon9 = QIcon()
-        icon9.addFile(u"H:/Easy Statistica/icons/zap.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon9.addFile(u"./icons/zap.png", QSize(), QIcon.Normal, QIcon.Off)
         self.CreateTableBtn.setIcon(icon9)
         self.CreateTableBtn.setIconSize(QSize(16, 16))
 
@@ -607,7 +606,7 @@ class Ui_MainWindow(object):
         self.OpenTableBtn.setMinimumSize(QSize(0, 30))
         self.OpenTableBtn.setFont(font4)
         icon10 = QIcon()
-        icon10.addFile(u"H:/Easy Statistica/icons/file.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon10.addFile(u"./icons/file.png", QSize(), QIcon.Normal, QIcon.Off)
         self.OpenTableBtn.setIcon(icon10)
         self.OpenTableBtn.setIconSize(QSize(16, 16))
 
@@ -717,7 +716,7 @@ class Ui_MainWindow(object):
         self.SaveExcelBtn.setMinimumSize(QSize(0, 30))
         self.SaveExcelBtn.setFont(font4)
         icon11 = QIcon()
-        icon11.addFile(u"H:/Easy Statistica/icons/folder.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon11.addFile(u"./icons/folder.png", QSize(), QIcon.Normal, QIcon.Off)
         self.SaveExcelBtn.setIcon(icon11)
         self.SaveExcelBtn.setIconSize(QSize(16, 16))
 
@@ -964,7 +963,7 @@ class Ui_MainWindow(object):
         self.FAQButton.setObjectName(u"FAQButton")
         self.FAQButton.setFont(font)
         icon12 = QIcon()
-        icon12.addFile(u"H:/Easy Statistica/icons/book-open.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon12.addFile(u"./icons/book-open.png", QSize(), QIcon.Normal, QIcon.Off)
         self.FAQButton.setIcon(icon12)
         self.FAQButton.setIconSize(QSize(16, 16))
 
@@ -1107,7 +1106,7 @@ class Ui_MainWindow(object):
         self.MinimizeBtn = QPushButton(self.frame_16)
         self.MinimizeBtn.setObjectName(u"MinimizeBtn")
         icon13 = QIcon()
-        icon13.addFile(u"H:/Easy Statistica/icons/minus.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon13.addFile(u"./icons/minus.png", QSize(), QIcon.Normal, QIcon.Off)
         self.MinimizeBtn.setIcon(icon13)
 
         self.horizontalLayout_11.addWidget(self.MinimizeBtn)
@@ -1115,7 +1114,7 @@ class Ui_MainWindow(object):
         self.NormalBtn = QPushButton(self.frame_16)
         self.NormalBtn.setObjectName(u"NormalBtn")
         icon14 = QIcon()
-        icon14.addFile(u"H:/Easy Statistica/icons/copy.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon14.addFile(u"./icons/copy.png", QSize(), QIcon.Normal, QIcon.Off)
         self.NormalBtn.setIcon(icon14)
 
         self.horizontalLayout_11.addWidget(self.NormalBtn)
@@ -1123,7 +1122,7 @@ class Ui_MainWindow(object):
         self.RestoreBtn = QPushButton(self.frame_16)
         self.RestoreBtn.setObjectName(u"RestoreBtn")
         icon15 = QIcon()
-        icon15.addFile(u"H:/Easy Statistica/icons/square.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon15.addFile(u"./icons/square.png", QSize(), QIcon.Normal, QIcon.Off)
         self.RestoreBtn.setIcon(icon15)
 
         self.horizontalLayout_11.addWidget(self.RestoreBtn)
@@ -1133,7 +1132,7 @@ class Ui_MainWindow(object):
         sizePolicy2.setHeightForWidth(self.CloseBtn.sizePolicy().hasHeightForWidth())
         self.CloseBtn.setSizePolicy(sizePolicy2)
         icon16 = QIcon()
-        icon16.addFile(u"H:/Easy Statistica/icons/x.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon16.addFile(u"./icons/x.png", QSize(), QIcon.Normal, QIcon.Off)
         self.CloseBtn.setIcon(icon16)
 
         self.horizontalLayout_11.addWidget(self.CloseBtn)
@@ -2847,7 +2846,7 @@ class Ui_MainWindow(object):
         self.BaseStatisticsBtn.setFont(font2)
         self.BaseStatisticsBtn.setLayoutDirection(Qt.RightToLeft)
         icon17 = QIcon()
-        icon17.addFile(u"H:/Easy Statistica/icons/coffee.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon17.addFile(u"./icons/coffee.png", QSize(), QIcon.Normal, QIcon.Off)
         self.BaseStatisticsBtn.setIcon(icon17)
         self.BaseStatisticsBtn.setIconSize(QSize(18, 18))
         self.BaseStatisticsBtn.setCheckable(True)
@@ -2859,7 +2858,7 @@ class Ui_MainWindow(object):
         self.StatCriteriaBtn.setFont(font2)
         self.StatCriteriaBtn.setLayoutDirection(Qt.RightToLeft)
         icon18 = QIcon()
-        icon18.addFile(u"H:/Easy Statistica/icons/package.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon18.addFile(u"./icons/package.png", QSize(), QIcon.Normal, QIcon.Off)
         self.StatCriteriaBtn.setIcon(icon18)
         self.StatCriteriaBtn.setIconSize(QSize(18, 18))
         self.StatCriteriaBtn.setCheckable(True)
@@ -2871,7 +2870,7 @@ class Ui_MainWindow(object):
         self.CorrRegrBtn.setFont(font2)
         self.CorrRegrBtn.setLayoutDirection(Qt.RightToLeft)
         icon19 = QIcon()
-        icon19.addFile(u"H:/Easy Statistica/icons/bar-chart.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon19.addFile(u"./icons/bar-chart.png", QSize(), QIcon.Normal, QIcon.Off)
         self.CorrRegrBtn.setIcon(icon19)
         self.CorrRegrBtn.setIconSize(QSize(18, 18))
         self.CorrRegrBtn.setCheckable(True)
@@ -2896,7 +2895,7 @@ class Ui_MainWindow(object):
         self.SampleSizeSelectionBtn.setFont(font2)
         self.SampleSizeSelectionBtn.setLayoutDirection(Qt.RightToLeft)
         icon20 = QIcon()
-        icon20.addFile(u"H:/Easy Statistica/icons/archive.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon20.addFile(u"./icons/archive.png", QSize(), QIcon.Normal, QIcon.Off)
         self.SampleSizeSelectionBtn.setIcon(icon20)
         self.SampleSizeSelectionBtn.setIconSize(QSize(18, 18))
         self.SampleSizeSelectionBtn.setCheckable(True)
@@ -2908,7 +2907,7 @@ class Ui_MainWindow(object):
         self.CoefficientsBtn.setFont(font2)
         self.CoefficientsBtn.setLayoutDirection(Qt.RightToLeft)
         icon21 = QIcon()
-        icon21.addFile(u"H:/Easy Statistica/icons/book.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon21.addFile(u"./icons/book.png", QSize(), QIcon.Normal, QIcon.Off)
         self.CoefficientsBtn.setIcon(icon21)
         self.CoefficientsBtn.setIconSize(QSize(18, 18))
         self.CoefficientsBtn.setCheckable(True)

@@ -1646,8 +1646,10 @@ class MainWindow(QtWidgets.QMainWindow):
                     msg = QtWidgets.QMessageBox.information(self, 'Attention', 'No data to save or empty lines.')
                     return
 
-        path, _ = QtWidgets.QFileDialog.getSaveFileName(self, 'Save XLSX', '',
-                                                        "Excel files (.xlsx)")
+        path, _ = QtWidgets.QFileDialog.getSaveFileName(self, 'Save XLSX', os.getenv('HOME'),
+                                                        "Excel files (*.xlsx)")
+        if path != '':
+            if QFileInfo(path).suffix() == "": path += '.xlsx'
         if not path:
             msg = QtWidgets.QMessageBox.information(self, 'Attention', 'No save file specified.')
             return
@@ -1692,7 +1694,7 @@ class MainWindow(QtWidgets.QMainWindow):
                     msg = QtWidgets.QMessageBox.information(self, 'Attention', 'No data to save or empty lines.')
                     return
         path, ok = QtWidgets.QFileDialog.getSaveFileName(
-            self, 'Save CSV', '', 'CSV(*.csv)')
+            self, 'Save CSV', os.getenv('HOME'), 'CSV(*.csv)')
         if not path:
             msg = QtWidgets.QMessageBox.information(self, 'Attention', 'No save file specified.')
             return
@@ -1713,13 +1715,14 @@ class MainWindow(QtWidgets.QMainWindow):
     def df_to_csv(self):
         if self.ui.dfTableView.isVisible():
             path, ok = QtWidgets.QFileDialog.getSaveFileName(
-                self, 'Save CSV', '', 'CSV(*.csv)')
+                self, 'Save CSV', os.getenv('HOME'), 'CSV(*.csv)')
             if not path:
                 msg = QtWidgets.QMessageBox.information(self, 'Attention', 'No save file specified.')
                 return
             if ok:
                 df = self.table_to_df()
                 df.to_csv(path, sep='\t', encoding='utf-8')
+                msg = QtWidgets.QMessageBox.information(self, 'Ok', 'CSV file exported')
         else:
             msg = QtWidgets.QMessageBox.information(self, 'Attention', 'No data to save')
             return
@@ -1727,13 +1730,16 @@ class MainWindow(QtWidgets.QMainWindow):
     def df_to_excel(self):
         if self.ui.dfTableView.isVisible():
             path, ok = QtWidgets.QFileDialog.getSaveFileName(
-                self, 'Save Excel', '', 'Excel(*.xlsx)')
+                self, 'Save Excel', os.getenv('HOME'), 'Excel(*.xlsx)')
+            if path != '':
+                if QFileInfo(path).suffix() == "": path += '.xlsx'
             if not path:
                 msg = QtWidgets.QMessageBox.information(self, 'Attention', 'No save file specified.')
                 return
             if ok:
                 df = self.table_to_df()
                 df.to_excel(path, index=False)
+                msg = QtWidgets.QMessageBox.information(self, 'Ok', 'Excel file exported')
         else:
             msg = QtWidgets.QMessageBox.information(self, 'Attention', 'No data to save')
             return
