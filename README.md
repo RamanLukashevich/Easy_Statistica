@@ -36,17 +36,21 @@ Section "Coefficients": calculation of critical values for the chi-square, Stude
 
 <img align="center" src=examples/screen_2.6.png width=600px>
 
-In the "Settings" section you can configure the data output for your tasks: replacing empty cells in data, the number of significant digits.
+Section "Settings": configure the data output for replacing empty cells in data, the number of significant digits.
 
 <img align="center" src=examples/screen_2.7.png width=600px>
 
-If you need information about the methods and criteria that are implemented in the analysis tools, please go to the "FAQ" section.
+section “FAQ”: provides information about the methods and criteria implemented in the analysis tools.
 
 <img align="center" src=examples/screen_2.8.png width=600px>
 
-In the "Reports" section, you can save your worksheet of data (before and after performing the analysis) in the required format, save the analysis results in PDF format, save graphs and plots in JPG format.
+Section “Reports”: implemented saving your data worksheet (before and after performing the analysis) in the required format, saving analysis results in PDF format, saving graphs and graphs in JPG format.
 
 <img align="center" src=examples/screen_2.9.png width=600px>
+
+### Windows
+
+A Windows standalone binary can be downloaded in [Google drive](https://drive.google.com/drive/folders/19DgtpvFLSrlNvipfKdj9_pGqnq2AWJQG?usp=sharing).
 
 
 
