@@ -4,11 +4,11 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-Easy Statistica is an application for statistical analysis that implements the functions of data analysis, data management, data mining, data visualization using statistical methods. The application is built in Python using the PySide6/Qt toolkit. It uses the Pandas DataFrame class to work with data. For graphics, the matplotlib library is used.
+Easy Statistica is an application for statistical analysis that implements the functions of data analysis, data management, data mining, data visualization using statistical methods. The application is built in Python using the PySide6/Qt toolkit. It uses the Pandas DataFrame class to work with data. For graphics, the application uses the Matplotlib library to visualize data in 2D and 3D graphics.
 
 <img align="center" src=examples/screen_1.png width=600px>
 
-You can download your data file in Excel or CSV format or copy the desired data columns from the file into a data table. It is now possible to use Ctrl+C and Ctrl+V to copy your data from tables to an application table for analysis.
+You can download your data file in Excel or CSV format or copy the desired data columns from the file into a data table. The application provides the ability to use Ctrl+C and Ctrl+V to copy data from tables into the application table for analysis.
 
 <img align="center" src=examples/screen_2.2.png width=600px>
 
@@ -48,9 +48,19 @@ Section “Reports”: implemented saving your data worksheet (before and after 
 
 <img align="center" src=examples/screen_2.9.png width=600px>
 
-### Windows
+
+### Python libraries used:
+* pandas v2.1.3, 
+* matplotlib v3.8.1, 
+* scipy v1.11.3, 
+* sklearn v1.3.2, 
+* numpy v1.26.2, 
+* statsmodels v0.14.0, 
+* openyxl v3.1.2 
+
+
+## Windows
 
 A Windows standalone binary can be downloaded in [Google drive](https://drive.google.com/drive/folders/19DgtpvFLSrlNvipfKdj9_pGqnq2AWJQG?usp=sharing).
-
 
 
