@@ -22,8 +22,7 @@ from math import sqrt
 import numpy as np
 import openpyxl
 import pandas
-import pandas as pd
-import scikit_posthocs as sp
+import scikit_posthocs
 from PySide6 import QtGui, QtWidgets
 from PySide6.QtCore import QEvent, QFileInfo
 from PySide6.QtGui import QGuiApplication
@@ -36,7 +35,7 @@ from scipy.stats import (chi2, t, poisson, kstest, shapiro, normaltest, ttest_1s
 from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.model_selection import train_test_split
 from statsmodels.stats.weightstats import ztest
-import statsmodels.api as sm
+from statsmodels import api as sm
 from sklearn.metrics import roc_curve, roc_auc_score, precision_recall_curve, f1_score, auc
 
 # IMPORT GUI FILE
@@ -543,7 +542,7 @@ class MainWindow(QtWidgets.QMainWindow):
         if self.ui.StatSpinBox_5.currentText() != ' ':
             group5 = self.ui.StatSpinBox_5.currentText()
             group5list = df.loc[:, group5]
-        ExMean = pd.to_numeric(str(self.ui.ExMeanSpinBox.value()))
+        ExMean = pandas.to_numeric(str(self.ui.ExMeanSpinBox.value()))
 
         # T-test (one)
         if self.ui.ttestCheckBox.isChecked() and self.ui.OneTtestRadioButton.isChecked():
@@ -605,7 +604,7 @@ class MainWindow(QtWidgets.QMainWindow):
                     self.ui.ResultViewLabel_2.text() + "\n " + group1 + ' vs ' + group2 + ":" + "\n t_statistic = "
                     + str(f'{t_statistic:.{self.ui.PNumSpinBox_2.value()}f}') + "\n p_value < "
                     + str(f'{(1 - self.ui.PLevelSpinBox_2.value()):.{self.ui.PNumSpinBox.value()}f}')
-                    + '\n Reject Null Hypothesis. \n Mean of ' + group1 + ' is different from' + group2 + '.')
+                    + '\n Reject Null Hypothesis. \n Mean of ' + group1 + ' is different from ' + group2 + '.')
             else:
                 self.ui.ResultViewLabel_2.setText(
                     self.ui.ResultViewLabel_2.text() + "\n " + group1 + ' vs ' + group2 + ":" + "\n t_statistic = "
@@ -830,7 +829,7 @@ class MainWindow(QtWidgets.QMainWindow):
                 t_statistic, p_value = stats.kruskal(group1list, group2list, group3list)
                 data = [group1list, group2list, group3list]
                 if p_value < (1 - self.ui.PLevelSpinBox_2.value()):
-                    danna = sp.posthoc_dunn(data, p_adjust='bonferroni')
+                    danna = scikit_posthocs.posthoc_dunn(data, p_adjust='bonferroni')
                     self.ui.ResultViewLabel_4.setText(
                         self.ui.ResultViewLabel_4.text() + "\n " + group1 + ' vs ' + group2 + ' vs ' + group3 + ":" + "\n t_statistic = "
                         + str(f'{t_statistic:.{self.ui.PNumSpinBox_2.value()}f}') + "\n p_value < "
@@ -856,7 +855,7 @@ class MainWindow(QtWidgets.QMainWindow):
                 t_statistic, p_value = stats.kruskal(group1list, group2list, group3list, group4list)
                 data = [group1list, group2list, group3list, group4list]
                 if p_value < (1 - self.ui.PLevelSpinBox_2.value()):
-                    danna = sp.posthoc_dunn(data, p_adjust='bonferroni')
+                    danna = scikit_posthocs.posthoc_dunn(data, p_adjust='bonferroni')
                     self.ui.ResultViewLabel_4.setText(
                         self.ui.ResultViewLabel_4.text() + "\n " + group1 + ' vs ' + group2 + ' vs ' + group3 + ' vs '
                         + group4 + ":" + "\n t_statistic = " + str(
@@ -884,7 +883,7 @@ class MainWindow(QtWidgets.QMainWindow):
                 t_statistic, p_value = stats.kruskal(group1list, group2list, group3list, group4list, group5list)
                 data = [group1list, group2list, group3list, group4list, group5list]
                 if p_value < (1 - self.ui.PLevelSpinBox_2.value()):
-                    danna = sp.posthoc_dunn(data, p_adjust='bonferroni')
+                    danna = scikit_posthocs.posthoc_dunn(data, p_adjust='bonferroni')
                     self.ui.ResultViewLabel_4.setText(
                         self.ui.ResultViewLabel_4.text() + "\n " + group1 + ' vs ' + group2 + ' vs ' + group3 + ' vs '
                         + group4 + ' vs ' + group5 + ":" + "\n t_statistic = " + str(
@@ -1233,7 +1232,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # logit_model = sm.Logit(Y_train, X_train).fit()
         r_model = logit_model.summary()
 
-        mlr_diff = pd.DataFrame(
+        mlr_diff = pandas.DataFrame(
             {'Actual value': Y_test, 'Predicted value': lr_probs.round(0)})
         model = DFModel(mlr_diff)
         self.ui.dfTableView.show()
@@ -1276,7 +1275,7 @@ class MainWindow(QtWidgets.QMainWindow):
         mlr = LinearRegression()
         mlr.fit(x_train, y_train)
         y_pred_mlr = mlr.predict(x_test)
-        mlr_diff = pd.DataFrame(
+        mlr_diff = pandas.DataFrame(
             {'Actual value': y_test, 'Predicted value': y_pred_mlr.round(self.ui.PNumSpinBox_2.value())})
         model = DFModel(mlr_diff)
         self.ui.dfTableView.show()

@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'interface.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.5.2
+## Created by: Qt User Interface Compiler version 6.6.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -24,6 +24,7 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QComb
     QWidget)
 
 from mplwidget import MplWidget
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -90,7 +91,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "\n"
-"#MainContentContainer, #TableResultView, #graphicsView, #dfTableView{\n"
+"#MainContentContainer, #TableResultView, #graphicsView, #dfTableView, #tableWidget_2{\n"
 "	background-color: #F0F0F0;\n"
 "}\n"
 "\n"
@@ -100,8 +101,8 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "\n"
-"#CreateTableBtn, #OpenTableBtn, #LetsGoBtn, #"
-                        "NumberColumnSb, #NumberRowsSb, #OpenCsvBtn, #SavePdfBtn, #SaveExcelBtn, #SaveCsvBtn, #ExportPdfBtn, #PreviewBtn, #PrintBtn, #SaveDfPushButton, #SaveDfPushButton_2, #SaveJpgPushButton, #PNumSpinBox, #PNumSpinBox_2, #FAQButton, #FAQButton_2, #FAQButton_3, #FAQButton_4, #FAQButton_5, #FAQButton_6\n"
+"#CreateTableBtn, #OpenTableBt"
+                        "n, #LetsGoBtn, #NumberColumnSb, #NumberRowsSb, #OpenCsvBtn, #SavePdfBtn, #SaveExcelBtn, #SaveCsvBtn, #ExportPdfBtn, #PreviewBtn, #PrintBtn, #SaveDfPushButton, #SaveDfPushButton_2, #SaveJpgPushButton, #PNumSpinBox, #PNumSpinBox_2, #FAQButton, #FAQButton_2, #FAQButton_3, #FAQButton_4, #FAQButton_5, #FAQButton_6\n"
 "{\n"
 "background-color: #E0E0E0;\n"
 "border-radius: 10px;  \n"
